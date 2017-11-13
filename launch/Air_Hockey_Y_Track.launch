@@ -1,0 +1,7 @@
+<?xml version="1.0" ?>
+
+<launch>
+    <node name="" pkg="air_hockey" type="Display_GUI.py" output="screen" />
+	<node name="" pkg="air_hockey" type="Air_Hockey_Y_Track.py" output="screen" />
+	<node pkg="rosbag" type="play" output="screen" name="player" args="-l $(find air_hockey)/bagfiles/Air_Hockey_PS3.bag"/>
+</launch>
